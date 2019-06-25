@@ -29,7 +29,7 @@ Install:
 npm install -g ethereum-private-key-to-public-key
 ```
 
-Convert private key to public address:
+Convert private key to public key:
 
 ```bash
 $ ethereum_private_key_to_public_key 4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d

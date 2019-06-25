@@ -1,6 +1,6 @@
 {
   "name": "ethereum-private-key-to-public-key",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Convert an Ethereum private key to a public key",
   "main": "index.js",
   "bin": {
