@@ -1,6 +1,6 @@
 # ethereum-private-key-to-public-key
 
-> Convert an Ethereum private key to a public address
+> Convert an Ethereum private key to a public key
 
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/ethereum-private-key-to-public-key/master/LICENSE)
 [![NPM version](https://badge.fury.io/js/ethereum-private-key-to-public-key.svg)](http://badge.fury.io/js/ethereum-private-key-to-public-key)
