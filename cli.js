@@ -12,12 +12,34 @@ const cli = meow(`
   flags: {}
 })
 
+let privateKey = cli.input[0]
 
-const privateKey = cli.input[0]
+if (process.stdin) {
+  process.stdin.setEncoding('utf8')
+  process.stdin.resume()
+  let content = ''
+  process.stdin.on('data', (buf) => {
+    content += buf.toString()
+  })
+  setTimeout(() => {
+    content = content.trim()
 
-if (!privateKey) {
-  console.log('private key argument is required')
-  process.exit(1)
+    if (content) {
+      privateKey = content
+    }
+
+    run()
+  }, 10)
+} else {
+  run()
 }
 
-console.log(privateKeyToPublicKey(privateKey).toString('hex'))
+function run() {
+  if (!privateKey) {
+    console.log('private key argument is required')
+    process.exit(1)
+  }
+
+  console.log(privateKeyToPublicKey(privateKey).toString('hex'))
+  process.exit(0)
+}
