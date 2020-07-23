@@ -1,14 +1,16 @@
 {
   "name": "ethereum-private-key-to-public-key",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Convert an Ethereum private key to a public key",
   "main": "index.js",
   "bin": {
-    "ethereum_private_key_to_public_key": "bin/ethereum_private_key_to_public_key"
+    "ethereum_private_key_to_public_key": "bin/ethereum_private_key_to_public_key",
+    "ethereum-private-key-to-public-key": "bin/ethereum_private_key_to_public_key"
   },
   "scripts": {
     "test": "tape test/*.js",
-    "lint": "standard --fix index.js test/test.js example/example.js"
+    "lint": "standard --fix index.js test/test.js example/example.js",
+    "build:example": "browserify example/main.js -o example/dist/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -43,6 +45,7 @@
     "cli"
   ],
   "devDependencies": {
+    "browserify": "^16.5.1",
     "standard": "^12.0.1",
     "tape": "^4.10.2"
   }

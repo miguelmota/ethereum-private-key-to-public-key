@@ -5,6 +5,10 @@
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/ethereum-private-key-to-public-key/master/LICENSE)
 [![NPM version](https://badge.fury.io/js/ethereum-private-key-to-public-key.svg)](http://badge.fury.io/js/ethereum-private-key-to-public-key)
 
+## Demo
+
+[https://lab.miguelmota.com/ethereum-private-key-to-public-key](https://lab.miguelmota.com/ethereum-private-key-to-public-key)
+
 ## Install
 
 ```bash
