@@ -10,7 +10,7 @@ function privateKeyToPublicKey (privateKey) {
     privateKey = Buffer.from(privateKey, 'hex')
   }
 
-  return publicKeyCreate(privateKey, false)
+  return Buffer.from(publicKeyCreate(privateKey, false))
 }
 
 module.exports = privateKeyToPublicKey
