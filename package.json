@@ -1,6 +1,6 @@
 {
   "name": "ethereum-private-key-to-public-key",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Convert an Ethereum private key to a public key",
   "main": "index.js",
   "bin": {
@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "meow": "^5.0.0",
-    "secp256k1": "^3.7.1"
+    "secp256k1": "^4.0.2"
   },
   "keywords": [
     "ethereum",
